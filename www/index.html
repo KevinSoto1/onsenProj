@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' http://localhost:5000 'unsafe-inline' 'unsafe-eval';media-src 'self' http://localhost:5000 'unsafe-inline' unsafe-eval;">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/unsplash.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/WebSQL.js"></script>
+  
+  
+</head>
+
+<body>
+  <ons-page modifier="material modifier2">
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button>
+          <i onclick="gallery()" class="zmdi zmdi-favorite" style="margin-top: 15px;"></i>
+        </ons-toolbar-button>
+      </div>
+
+      <div style="text-align: center;" class="toolbar__center toolbar--material__center">
+        Image & Video Capture
+      </div>
+
+      <div class="right">
+        <ons-toolbar-button>
+          <i onclick="galleryV()" class="zmdi zmdi-favorite" style="margin-top: 15px;"></i>
+        </ons-toolbar-button>
+      </div>
+    </ons-toolbar>
+    <div style="background-color: whitesmoke;width: 100%;height: 100%;">
+
+    </div>
+    <ons-tabbar swipeable position="bottom">
+      <ons-tab page="image.html" label="Camera" icon="camera-retro, material:camera-retro" active>
+      </ons-tab>
+      <ons-tab page="api.html" label="API" icon="fa-photo, material:fa-photo">
+      
+    </ons-tabbar>
+  </ons-page>
+</body>
+
+</html>
